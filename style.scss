@@ -1,3 +1,51 @@
 body {
     background-color: aquamarine;
+    /*style the input field to suggest keywords*/
+    input [type="text"]{
+        padding: 10px;
+        font-size: 1.2rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: none;
+        outline: none;
+        width: 60;
+    }
+    /*style the container for the suggestions*/
+    .suggestions-container{
+        position: relative;
+        width: 60;
+    }
+    /*style the list of suggestions*/
+    .suggestions {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        max-height: 200px;
+        overflow-y: auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px;
+        rgba(0,0,0,0.2);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    /*style a single suggestion item*/
+    .suugestions li{
+        padding: 10px;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    /*style the suggestion item when hoverd*/
+    .suggestions li:hover{
+        background-color: #f1f1f1;
+    }
+    /*style the suggestion item when selected*/
+    .suggestions li:selected {
+        background-color: #007bff;
+        color: #fff;
+    }
+
 }
